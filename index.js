@@ -110,6 +110,9 @@ run().catch(console.dir)
 app.get('/', (req, res) => {
     res.send('Hello from genius car!')
 })
+app.get('/hero', (req, res) => {
+    res.send('Hello i changed something!')
+})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
