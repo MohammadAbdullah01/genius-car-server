@@ -9,9 +9,6 @@ const port = process.env.PORT || 5000
 app.use(cors())
 app.use(express.json())
 
-// pass  ovIFsVbFEmUP5785
-//name geniusUser
-
 // verify user with jwt 
 function verifyUser(req, res, next) {
     const authHeader = req.headers.authorization;
